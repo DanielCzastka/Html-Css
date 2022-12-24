@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias e HTML5</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site me varios sites diferentes ou simplismente aumente a dinamica do seu navegador  </p>
+    
+    <picture>
+        <!-- source que vai substituir sempre tem que ficar emcima  -->
+        <source media="(max-width: 750px )" srcset="imagems/foto-p.png" type="image/png">
+        <!-- source tem que ser emcima da imagem -->
+        <source media="(max-width:1050px )" srcset="imagems/foto-m.png" type="image/png">
+        <img src="imagems/foto-g.png" alt="imagem flexível ">
+        <!-- se a janela for menor que 1000px entao vai abrir a imagem M para não precisar da bara de rolagem. coloca 50px a mais por conta da barra de rolagem -->
+    </picture>
+
+    <picture>
+        <!-- sourse midia type = preenche os dados max-width, coloca a foto que vai substituir e fala que tipo ela é -->
+        <source media="(min-width: )" srcset="" type="image/">
+    </picture>
+
+    <h1> Reproduzindo audio </h1>
+    <p>Vamos aprender a reprodizir audios em html </p>
+    <audio src="midia/audio.mp3" controls autoplay></audio>
+
+    <h1>Outra forma de colocar audio </h1>
+    <p>colocar o audio especificando de que tipo ele é </p>
+    <audio preload="metadata">
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <source src="midia/audio.ogg" type="audio/ogg">
+        <source src="midia/audio.wav" type="audio/wav">
+        <!-- ele da prioridade para o primeiro que aparecer se caso este não funcionar ele vai para o priximo -->
+
+    </audio>
+
+    <h1>Colocar Video</h1>
+    
+</body>
+</html>
