@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+
+    <style>
+        /* Alinhamento vertical */
+        #container{
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            position: relative; 
+
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+             background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            /* usa-se a posição absoluta e dai da pra mecher em left top botton e right (ele pega como referencia a parte superior esquerda da imagem)*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            /* Mudar para a imagem ficar realmente no meio  (NÃO ESQUEÇA DO VIRGULA)*/
+            transform: translate(-50%,-50%);
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
