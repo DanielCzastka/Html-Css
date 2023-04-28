@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required autocomplete="email">
+            </div>
+            <div>
+                <label for="telefone">Telfone</label>
+                <input type="tel" name="telefone" id="telefone" required autocomplete="tel" pattern="^d/(d/{2}/)d/{4,5}-d/{4}$" placeholder="(00)00000-0000" >
+            </div>
+        </fieldset>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        
+    </form>
+</body>
+</html>
