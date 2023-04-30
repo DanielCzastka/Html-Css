@@ -15,7 +15,10 @@
 
         <div>
             <label for="nivel">Nivel de satisfação</label>
-            <input type="range" name="nivel" id="nivel" min="1" max="5" value="1">
+            <input type="range" name="nivel" id="nivel" min="1" max="10" value="5" oninput="valor.innerHTML = Number(nivel.value)">
+            <output id="valor">
+                5
+            </output>
         </div>
 
         <div>
